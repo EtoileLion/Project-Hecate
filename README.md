@@ -1,6 +1,6 @@
 # TheDevilsPlayhouse
 
-Private Repository for Project Calliope
+Private Repository for Project Hecate
 
  This repository will change names at the appropriate time.
 

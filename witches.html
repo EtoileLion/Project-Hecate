@@ -28,7 +28,7 @@
 	<h2>My Spellbook</h2>
 	<p><span data-i18n="myspellbookis">My spellbook is</span> <input type='text' name='attr_spellbookadj1'  data-i18n-placeholder="adjective"> and  <input type='text' name='attr_spellbookadj2'  data-i18n-placeholder="adjective">
 	<fieldset class='repeating_spells'>
-		<label data-i18n="spellname">Spell Name</label><input type='text' name='attr_spellname'><button type='roll' value="&{template:aw} {{result=[[2d6+@{level}+?{'Modifier/Penalty?'|0}]]}} {{roll_name=@{spellname}}}"></button><br>
+		<label data-i18n="spellname">Spell Name</label><input type='text' name='attr_spellname'><button type='roll' value="&{template:aw} {{result=[[2d8+@{level}+?{'Modifier/Penalty?'|0}]]}} {{roll_name=@{spellname}}}"></button><br>
 		<label data-i18n="spelllevel">Spell Level</label><input type='number' name='attr_level'><br>
 		<label data-i18n="spelldesc">Spell Description</label><button type='roll' class='sheet-squawk' value="&{template:squawk} {{spellname=@{spellname}}} {{desc=@{desc}}} {{label=Level @{level}}}"></button><textarea name='attr_desc'></textarea>
 		<label data-i18n="spellsuccs">Successful Casts:</label><input type='checkbox' name='attr_successcast1'><input type='checkbox' name='attr_successcast2'><input type='checkbox' name='attr_successcast3'><br>

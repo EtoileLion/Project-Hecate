@@ -4,3 +4,21 @@
 	display: none;
 }
 
+.sheet-isconfig[value="0"] ~ .sheet-sheettype[value="school"] ~ .sheet-school,
+.sheet-isconfig[value="0"] ~ .sheet-sheettype[value="witch"] ~ .sheet-witch,
+.sheet-isconfig[value='on'] ~ .sheet-page3 {
+	display: inline;
+}
+
+.sheet-col-left, .sheet-col-right {
+	display: inline;
+}
+
+.sheet-col-left {
+	width: 30%;
+}
+
+button.sheet-squawk:before {
+	font-family: "Pictos" !important;
+	content: "w" !important;
+}

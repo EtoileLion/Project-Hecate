@@ -30,7 +30,7 @@
 			<button type='roll' value="&{template:rr} {{result=[[2d8+?{'Modifier/Penalty?'|0}]]}} {{roll_name=2d8}} {{name=@{character_name}}} ">Roll 2d8</button>
 		</p>		
 		<h2>About Me</h2>		
-		<div class='3colrow'>
+		<div class='2colrow'>
 		<div class='col'>
 			<span data-i18n="physically">Physically</span><br />
 			<input type='text' name='attr_witchphysadj1' data-i18n-placeholder="adjective">
@@ -39,16 +39,26 @@
 		<div class='col'>
 		<span data-i18n="hair">Hair</span><br><input type='text' name='attr_witchhair' data-i18n-placeholder="adjective"><br> <span data-i18n="eyes">Eyes</span><br><input type='text' name='attr_witcheyes' data-i18n-placeholder="adjective">
 		</div>
+		</div>
+		<div class='3colrow'>
 		<div class='col'>
 		<span data-i18n="personality">Personality</span> <input type='text' name='attr_witchpersadj1' data-i18n-placeholder="adjective"><br> <input type='text' name='attr_witchpersadj2' data-i18n-placeholder="adjective"><br><input type='text' name='attr_witchpersadj3' data-i18n-placeholder="adjective">
-		</div>
-		</div>
-		<div class='2colrow'>
+		<fieldset class='repeating_personality'>
+			<input type='text' name='attr_witchpersadj' data-i18n-placeholder="adjective">
+		</fieldset>
+		</div>			
 		<div class='col'>
 			<span data-i18n="like">Likes</span><br><input type='text' name='attr_witchlikenoun'  data-i18n-placeholder="noun"><br><input type='text' name='attr_witchlikeverb' data-i18n-placeholder="verb">.
+		<fieldset class='repeating_likes'>
+			<input type='text' name='attr_witchlike'>
+		</fieldset>			
 		</div>
 		<div class='col'>
 			<span data-i18n="hate">Hates</span><br><input type='text' name='attr_witchhatenoun'  data-i18n-placeholder="noun"><br> <input type='text' name='attr_witchhateverb' data-i18n-placeholder="verb">
+		<fieldset class='repeating_hates'>
+			<input type='text' name='attr_witchhate'>
+		</fieldset>			
+<!-- NOTE TO SELF: Hide a value in the repeats, on open first time (check for sheet_opened) add rows with values in hidden fields to create 'default' sets. Set Attrs "repeating_test_"+generateRowID()+"_value" for each repeater, for X times. -->			
 		</div>
 		</div>
 		<hr>

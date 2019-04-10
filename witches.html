@@ -1,20 +1,25 @@
-<input type='checkbox' name='attr_isconfig'>
 <input type='hidden' class='sheet-isconfig' name='attr_isconfig' value="0">
 <input type='hidden' class='sheet-sheettype' name='attr_sheettype' value="witch">
 <div class='sheet-witch'>
 	<input type='hidden' class='sheet-witchpage' name='attr_witchpage' value="1">
-	<label class='sheet-pfcontainer'>
-		<input name='attr_witchpage'  type='radio' value="1" checked>
-		<span class="sheet-pfradio">
-		</span>
-	</label>
-	<label class='sheet-pfcontainer'>
-		<input name='attr_witchpage' type='radio' value="2" >
-		<span class="sheet-pfradio">
-		</span>		
-	</label>
-	<div class='sheet-page1 sheet-page'>
-		<h2>Bio</h2>
+    <div class='sheet-header'>
+		<div class='sheet-head-img'></div>
+		<div class='sheet-pagetogglediv'>	
+			<label class='sheet-pfcontainer'>
+				<input name='attr_witchpage'  type='radio' value="1" checked>
+				<span class="sheet-pfradio">
+				</span>
+			</label>
+			<label class='sheet-pfcontainer'>
+				<input name='attr_witchpage' type='radio' value="2" >
+				<span class="sheet-pfradio">
+				</span>		
+			</label>
+		</div>
+		<input type='checkbox' name='attr_isconfig'>
+	</div>		
+	<div class='sheet-page1 sheet-page'>	
+		<h2>About Me</h2>
 		<p>
 			<span data-i18n ="nameis">My name is</span> <input type='text' name='attr_character_name' placeholder="Character Name" data-i18n-placeholder="charactername"> - <span data-i18n="witch-witchnolabel">Witch #</span>
 			<input type='number' name='witchnumber' min=1 value=1> among my coven.

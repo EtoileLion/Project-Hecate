@@ -1,59 +1,142 @@
 <input type='checkbox' name='attr_isconfig'>
-<input type='hidden' class='sheet-isconfig' name='attr_isconfig'>
-<input type='hidden' class='sheet-sheettype' name='attr_sheettype'>
+<input type='hidden' class='sheet-isconfig' name='attr_isconfig' value="0">
+<input type='hidden' class='sheet-sheettype' name='attr_sheettype' value="witch">
 <div class='sheet-witch'>
-	<div class='sheet-col-left'>
-	<h2>Bio</h2>
-    <p><span data-i18n ="nameis">My name is</span> <input type='text' name='attr_character_name' placeholder="Character Name" data-i18n-placeholder="charactername"> - <span data-i18n="witch-witchnolabel">Witch #</span><input type='number' name='witchnumber' min=1 value=1> among my coven.</p>
-	<p><span data-i18n="physically">I am physically</span> <input type='text' name='attr_witchphysadj1' data-i18n-placeholder="adjective"> <span data-i18n="and">and</span> <input type='text' name='attr_witchphysadj2'  data-i18n-placeholder="adjective">.</p>
-	<p><span data-i18n="ihave">I have</span> <input type='text' name='attr_witchhair' data-i18n-placeholder="adjective"> <span data-i18n="hairand">hair, and</span> <input type='text' name='attr_witcheyes' data-i18n-placeholder="adjective"> <span data-i18n="eyes">eyes</span>.</p>
-	<p><span data-i18n="personalityis">My personality is</span> <input type='text' name='attr_witchpersadj1' data-i18n-placeholder="adjective">, <input type='text' name='attr_witchpersadj2' data-i18n-placeholder="adjective">, <span data-i18n="and">and</span> <input type='text' name='attr_witchpersadj3' data-i18n-placeholder="adjective">.</p>
-	<p><span data-i18n="ilike">I like</span> <input type='text' name='attr_witchlikenoun'  data-i18n-placeholder="noun"> <span data-i18n="and">and</span> <input type='text' name='attr_witchlikeverb' data-i18n-placeholder="verb">.</p>
-	<p><span data-i18n="ihate">I hate</span> <input type='text' name='attr_witchhatenoun'  data-i18n-placeholder="noun"> <span data-i18n="and">and</span> <input type='text' name='attr_witchhateverb' data-i18n-placeholder="verb">.</p>
-	<hr>
-	<h2>School</h2>
-	<p><span data-i18n="favoriteprofis">My favorite professor is</span> <input type='text' name='attr_favprof'  data-i18n-placeholder="professor"> <span data-i18n="because">because</span> <input type='text' name='attr_favprofreason' data-i18n-placeholder="reason"></p>
-	<p><span data-i18n="favoriteplaceis">My favorite place in the school is</span> <input type='text' name='attr_favloc' data-i18n-placeholder="location"> <span data-i18n="because">because</span> <input type='text' name='attr_favlocreason' data-i18n-placeholder="reason"></p>
-	<p><input type='text' name='attr_favfriend' data-i18n-placeholder="student"> <span data-i18n="bffbecause">is my best friend because</span> <input type='text' name='attr_favfriendreason' data-i18n-placeholder="reason"></p>
-	<p><span data-i18n="worriedabout">I'm worried about</span> <input type='text' name='attr_favworry' data-i18n-placeholder="student"> <span data-i18n="because">because</span> <input type='text' name='attr_favworryreason' data-i18n-placeholder="reason"></p>
-	<p><span data-i18n="admire">I admire</span> <input type='text' name='attr_favadmire' data-i18n-placeholder="student"> <span data-i18n="because">because</span> <input type='text' name='attr_favadmirereason' data-i18n-placeholder="reason"></p>
-	<hr>
-	<h2>Family</h2>
-	<p><span data-i18n="familyis">My family is</span> <input type='text' name='attr_famadj1' data-i18n-placeholder="adjective">, <input type='text' name='attr_famadj2' data-i18n-placeholder="adjective">, <span data-i18n="and">and</span> <input type='text' name='attr_famadj3' data-i18n-placeholder="adjective">.</p>
-	<p><span data-i18n="closesttomy">I am closest to my</span> <input type='text' name='attr_famclose' data-i18n-placeholder="fammember"> <span data-i18n="because">because</span> <input type='text' name='attr_famclosereason' data-i18n-placeholder="reason">.</p>
-	<p><span data-i18n="houseis">My house is</span> <input type='text' name='attr_houseadj1' data-i18n-placeholder="adjective">, <input type='text' name='attr_houseadj2' data-i18n-placeholder="adjective">, <span data-i18n="and">and</span> <input type='text' name='attr_houseadj3' data-i18n-placeholder="adjective">.</p>
-	<p><span data-i18n="favoritehouseplaceis">My favorite place in my house is</span> <input type='text' name='attr_houseloc' data-i18n-placeholder="location"> <span data-i18n="because">because</span> <input type='text' name='attr_houselocreason' data-i18n-placeholder="reason">.</p>
+	<input type='hidden' class='sheet-witchpage' name='attr_witchpage' value="1">
+	<label class='sheet-pfcontainer'>
+		<input name='attr_witchpage'  type='radio' value="1" checked>
+		<span class="sheet-pfradio">
+		</span>
+	</label>
+	<label class='sheet-pfcontainer'>
+		<input name='attr_witchpage' type='radio' value="2" >
+		<span class="sheet-pfradio">
+		</span>		
+	</label>
+	<div class='sheet-page1 sheet-page'>
+		<h2>Bio</h2>
+		<p>
+			<span data-i18n ="nameis">My name is</span> <input type='text' name='attr_character_name' placeholder="Character Name" data-i18n-placeholder="charactername"> - <span data-i18n="witch-witchnolabel">Witch #</span>
+			<input type='number' name='witchnumber' min=1 value=1> among my coven.
+		</p>
+		<p>
+			<span data-i18n="physically">I am physically</span> <input type='text' name='attr_witchphysadj1' data-i18n-placeholder="adjective"> <span data-i18n="and">and</span> <input type='text' name='attr_witchphysadj2'  data-i18n-placeholder="adjective">.
+		</p>
+		<p>
+			<span data-i18n="ihave">I have</span> <input type='text' name='attr_witchhair' data-i18n-placeholder="adjective"> <span data-i18n="hairand">hair, and</span> <input type='text' name='attr_witcheyes' data-i18n-placeholder="adjective"> <span data-i18n="eyes">eyes</span>.
+		</p>
+		<p>
+			<span data-i18n="personalityis">My personality is</span> <input type='text' name='attr_witchpersadj1' data-i18n-placeholder="adjective">, <input type='text' name='attr_witchpersadj2' data-i18n-placeholder="adjective">, <span data-i18n="and">and</span> <input type='text' name='attr_witchpersadj3' data-i18n-placeholder="adjective">
+		</p>
+		<p>
+			<span data-i18n="ilike">I like</span> <input type='text' name='attr_witchlikenoun'  data-i18n-placeholder="noun"> <span data-i18n="and">and</span> <input type='text' name='attr_witchlikeverb' data-i18n-placeholder="verb">.
+		</p>
+		<p>
+			<span data-i18n="ihate">I hate</span> <input type='text' name='attr_witchhatenoun'  data-i18n-placeholder="noun"> <span data-i18n="and">and</span> <input type='text' name='attr_witchhateverb' data-i18n-placeholder="verb">.
+		</p>
+		<hr>
+		<h2>School</h2>
+		<p>
+			<span data-i18n="favoriteprofis">My favorite professor is</span> <input type='text' name='attr_favprof'  data-i18n-placeholder="professor"> <span data-i18n="because">because</span> <input type='text' name='attr_favprofreason' data-i18n-placeholder="reason">
+		</p>
+		<p>
+			<span data-i18n="favoriteplaceis">My favorite place in the school is</span> <input type='text' name='attr_favloc' data-i18n-placeholder="location"> <span data-i18n="because">because</span> <input type='text' name='attr_favlocreason' data-i18n-placeholder="reason">
+		</p>
+		<p>
+			<input type='text' name='attr_favfriend' data-i18n-placeholder="student"> <span data-i18n="bffbecause">is my best friend because</span> <input type='text' name='attr_favfriendreason' data-i18n-placeholder="reason">
+		</p>
+		<p>
+			<span data-i18n="worriedabout">I'm worried about</span> <input type='text' name='attr_favworry' data-i18n-placeholder="student"> <span data-i18n="because">because</span> <input type='text' name='attr_favworryreason' data-i18n-placeholder="reason">
+		</p>
+		<p>
+			<span data-i18n="admire">I admire</span> <input type='text' name='attr_favadmire' data-i18n-placeholder="student"> <span data-i18n="because">because</span> <input type='text' name='attr_favadmirereason' data-i18n-placeholder="reason">
+		</p>
+		<hr>
+		<h2>Family</h2>
+		<p>
+		<span data-i18n="familyis">My family is</span> <input type='text' name='attr_famadj1' data-i18n-placeholder="adjective">, <input type='text' name='attr_famadj2' data-i18n-placeholder="adjective">, <span data-i18n="and">and</span> <input type='text' name='attr_famadj3' data-i18n-placeholder="adjective">.</p>
+		<p>
+		<span data-i18n="closesttomy">I am closest to my</span> <input type='text' name='attr_famclose' data-i18n-placeholder="fammember"> <span data-i18n="because">because</span> <input type='text' name='attr_famclosereason' data-i18n-placeholder="reason">.</p>
+		<p>
+		<span data-i18n="houseis">My house is</span> <input type='text' name='attr_houseadj1' data-i18n-placeholder="adjective">, <input type='text' name='attr_houseadj2' data-i18n-placeholder="adjective">, <span data-i18n="and">and</span> <input type='text' name='attr_houseadj3' data-i18n-placeholder="adjective">.</p>
+		<p>
+		<span data-i18n="favoritehouseplaceis">My favorite place in my house is</span> <input type='text' name='attr_houseloc' data-i18n-placeholder="location"> <span data-i18n="because">because</span> <input type='text' name='attr_houselocreason' data-i18n-placeholder="reason">.</p>
 	</div>
-    <div class='sheet-col-right'>
-	<h2>My Spellbook</h2>
-	<p><span data-i18n="myspellbookis">My spellbook is</span> <input type='text' name='attr_spellbookadj1'  data-i18n-placeholder="adjective"> and  <input type='text' name='attr_spellbookadj2'  data-i18n-placeholder="adjective">
-	<fieldset class='repeating_spells'>
-		<label data-i18n="spellname">Spell Name</label><input type='text' name='attr_spellname'><button type='roll' value="&{template:aw} {{result=[[2d8+@{level}+?{'Modifier/Penalty?'|0}]]}} {{roll_name=@{spellname}}}"></button><br>
-		<label data-i18n="spelllevel">Spell Level</label><input type='number' name='attr_level'><br>
-		<label data-i18n="spelldesc">Spell Description</label><button type='roll' class='sheet-squawk' value="&{template:squawk} {{spellname=@{spellname}}} {{desc=@{desc}}} {{label=Level @{level}}}"></button><textarea name='attr_desc'></textarea>
-		<label data-i18n="spellsuccs">Successful Casts:</label><input type='checkbox' name='attr_successcast1'><input type='checkbox' name='attr_successcast2'><input type='checkbox' name='attr_successcast3'><br>
-		<label data-i18n="spellfails">Failed Casts:</label><input type='checkbox' name='attr_failcast1'><input type='checkbox' name='attr_failcast2'><input type='checkbox' name='attr_failcast3'><input type='checkbox' name='attr_failcast4'><input type='checkbox' name='attr_failcast5'>
-	</fieldset>
+    <div class='sheet-page2 sheet-page'>
+		<h2>My Spellbook</h2>
+		<p>
+			<span data-i18n="myspellbookis">My spellbook is</span> <input type='text' name='attr_spellbookadj1'  data-i18n-placeholder="adjective"> and  <input type='text' name='attr_spellbookadj2'  data-i18n-placeholder="adjective">
+		</p>
+		<fieldset class='repeating_spells'>
+			<label data-i18n="spellname">Spell Name</label>
+			<input type='text' name='attr_spellname'>
+			<button type='roll' value="&{template:aw} {{result=[[2d8+@{level}+?{'Modifier/Penalty?'|0}]]}} {{roll_name=@{spellname}}}">
+			</button>
+			<br>
+			<label data-i18n="spelllevel">Spell Level</label>
+			<input type='number' name='attr_level'>
+			<br>
+			<label data-i18n="spelldesc">Spell Description</label>
+			<button type='roll' class='sheet-squawk' value="&{template:squawk} {{spellname=@{spellname}}} {{desc=@{desc}}} {{label=Level @{level}}}">
+			</button>
+			<textarea name='attr_desc'>
+			</textarea>
+			<label data-i18n="spellsuccs">Successful Casts:</label>
+			<input type='checkbox' name='attr_successcast1'>
+			<input type='checkbox' name='attr_successcast2'>
+			<input type='checkbox' name='attr_successcast3'>
+			<br>
+			<label data-i18n="spellfails">Failed Casts:</label>
+			<input type='checkbox' name='attr_failcast1'>
+			<input type='checkbox' name='attr_failcast2'>
+			<input type='checkbox' name='attr_failcast3'>
+			<input type='checkbox' name='attr_failcast4'>
+			<input type='checkbox' name='attr_failcast5'>
+		</fieldset>
 	</div>
-
+	
 </div>
 <div class='sheet-school'>
-<p><span data-i18n="school-wegoto">We go to </span><input type='text' name='attr_schoolname'>, <span data-i18n="school-schoolof">the School of</span> <input type='text' name='attr_schoolnoun' placeholder="(Noun)" data-i18n-placeholder="noun"></p>
-	<p><span data-i18n="school-desc">Our school is </span><fieldset class='repeating_schooladjs'><input type='text' name='attr_schooladj'  placeholder="(Adjective)" data-i18n-placeholder="adjective"></fieldset></p>
-	<p><span data-i18n="school-spellsfor">We use our spells to</span> <input type='text' name='attr_schoolverb' data-i18n-placeholder="verb" placeholder="(Verb)"></p>
-<p><span data-i18n="school-an">A[n]</span> <input type='text' name='attr_schoolhwadj' data-i18n-placeholder="adjective" placeholder="(Adjective)"> <span data-i18n="has">has</span> <input type='text' name='attr_schoolhwnoun' placeholder="(Noun)" data-i18n-placeholder="noun">  <input type='text' name='attr_schoolhwverb' data-i18n-placeholder="verb" placeholder="(Verb)"> <span data-i18n="school-ourschool">our school.</span></p>
+	<p>
+		<span data-i18n="school-wegoto">We go to </span>
+		<input type='text' name='attr_schoolname'>, <span data-i18n="school-schoolof">the School of</span> <input type='text' name='attr_schoolnoun' placeholder="(Noun)" data-i18n-placeholder="noun">
+	</p>
+	<p>
+		<span data-i18n="school-desc">Our school is </span>
+		<fieldset class='repeating_schooladjs'>
+			<input type='text' name='attr_schooladj'  placeholder="(Adjective)" data-i18n-placeholder="adjective">
+		</fieldset>
+	</p>
+	<p>
+		<span data-i18n="school-spellsfor">We use our spells to</span> <input type='text' name='attr_schoolverb' data-i18n-placeholder="verb" placeholder="(Verb)">
+	</p>
+	<p>
+		<span data-i18n="school-an">A[n]</span> <input type='text' name='attr_schoolhwadj' data-i18n-placeholder="adjective" placeholder="(Adjective)"> <span data-i18n="has">has</span> <input type='text' name='attr_schoolhwnoun' placeholder="(Noun)" data-i18n-placeholder="noun">  <input type='text' name='attr_schoolhwverb' data-i18n-placeholder="verb" placeholder="(Verb)"> <span data-i18n="school-ourschool">our school.</span>
+	</p>
 	<h2 data-i18n="school-faculty">Faculty</h2>
 	<fieldset class="repeating_professors">
-	<p><span data-i18n="school-professor">Professor</span><input type='text' name='attr_profname' placeholder="(Name)" data-i18n-placeholder="name"> <span data-i18n="school-teaches">teaches</span> <input type='text' name='attr_schoolclass' placeholder="(Class Name)"  data-i18n-placeholder="classname">.</p>
-	<p><span data-i18n="school-theyare">They are</span> <input type='text' name='attr_profadj1' placeholder="(Adjective)" data-i18n-placeholder="adjective">, <span data-i18n="and">and</span> <input type='text' name='attr_projadj2' placeholder="(Adjective)" data-i18n-placeholder="adjective">.</p>
+		<p>
+			<span data-i18n="school-professor">Professor</span>
+		<input type='text' name='attr_profname' placeholder="(Name)" data-i18n-placeholder="name"> <span data-i18n="school-teaches">teaches</span> <input type='text' name='attr_schoolclass' placeholder="(Class Name)"  data-i18n-placeholder="classname">.</p>
+		<p>
+		<span data-i18n="school-theyare">They are</span> <input type='text' name='attr_profadj1' placeholder="(Adjective)" data-i18n-placeholder="adjective">, <span data-i18n="and">and</span> <input type='text' name='attr_projadj2' placeholder="(Adjective)" data-i18n-placeholder="adjective">.</p>
 	</fieldset>
 </div>
 <div class='sheet-page3'>
-<p><span data-i18n="sheetisa">This sheet is a</span> <select name='attr_sheettype'><option value='witch' selected  data-i18n="witch">Witch</option><option value='school' data-i18n="school">School</option></select></p>
+	<p>
+		<span data-i18n="sheetisa">This sheet is a</span> <select name='attr_sheettype'>
+			<option value='witch' selected  data-i18n="witch">Witch</option>
+			<option value='school' data-i18n="school">School</option>
+		</select>
+	</p>
 </div>
 <rolltemplate class="sheet-rolltemplate-aw">
 	<table>
-		<tr><th colspan="2">{{name}} rolls<br><i>{{#roll_name}}{{roll_name}}{{/roll_name}}{{#roll_mod}}{{roll_mod}}{{/roll_mod}}</i></th></tr>
+		<tr>
+			<th colspan="2">{{name}} rolls<br>
+				<i>{{#roll_name}}{{roll_name}}{{/roll_name}}{{#roll_mod}}{{roll_mod}}{{/roll_mod}}</i>
+			</th>
+		</tr>
 		<tr>
 			{{#rollGreater() result 17}}
 			<td class="result success">{{result}}</td>
@@ -80,9 +163,12 @@
 </rolltemplate>
 <rolltemplate class="sheet-rolltemplate-squawk">
 	<table class='sheet-squawkbox'>
-		<tr><th colspan="2">{{spellname}}{{#label}}<br><i>({{label}})</i>{{/label}}</th></tr>
 		<tr>
-		    <td>
+			<th colspan="2">{{spellname}}{{#label}}<br>
+			<i>({{label}})</i>{{/label}}</th>
+		</tr>
+		<tr>
+			<td>
 				{{desc}}
 			</td>
 		</tr>
@@ -90,29 +176,21 @@
 </rolltemplate>
 <script type='text/worker'>
 	"use strict";
-	
-	//Default Value setter - would be replaced by sheet.json.
-	on("sheet:opened", function(eventInfo) {
-		getAttrs(["sheettype","isconfig"], function (values) {
-			setAttrs({'sheettype':values.sheettype,'isconfig':values.isconfig});
-			console.log(values);
-		});
-	});
-   
-   // Name formatter for School.
-   on("change:schoolnoun change:schoolname", function(eventInfo) {
+		
+	// Name formatter for School.
+	on("change:schoolnoun change:schoolname", function(eventInfo) {
 		getAttrs(["sheettype","schoolnoun","schoolname"], function (values) {
 			if(values.sheettype == "school") {
-			    if(values.hasOwnProperty("schoolname") && values.schoolname != "") {
-				   if(values.hasOwnProperty("schoolnoun") && values.schoolnoun != "") {
-					setAttrs({'character_name': values.schoolname+", School of "+values.schoolnoun});
-					} else {
-					setAttrs({'character_name': values.schoolname});
-				   }
-				} else if(values.hasOwnProperty("schoolnoun") && values.schoolnoun != "") {
+				if(values.hasOwnProperty("schoolname") && values.schoolname != "") {
+					if(values.hasOwnProperty("schoolnoun") && values.schoolnoun != "") {
+						setAttrs({'character_name': values.schoolname+", School of "+values.schoolnoun});
+						} else {
+						setAttrs({'character_name': values.schoolname});
+					}
+					} else if(values.hasOwnProperty("schoolnoun") && values.schoolnoun != "") {
 					setAttrs({'character_name': "The School of "+values.schoolnoun});				
 				}
 			}
 		});
-   });
-</script>  
+	});
+</script>  		

@@ -1,16 +1,17 @@
 .sheet-page3,
 .sheet-witch,
-.sheet-school {
+.sheet-school,
+.sheet-page1,
+.sheet-page2 {
 	display: none;
 }
 
 .sheet-isconfig[value="0"] ~ .sheet-sheettype[value="school"] ~ .sheet-school,
 .sheet-isconfig[value="0"] ~ .sheet-sheettype[value="witch"] ~ .sheet-witch,
-.sheet-isconfig[value='on'] ~ .sheet-page3 {
-	display: inline;
-}
-
-.sheet-col-left, .sheet-col-right {
+.sheet-isconfig[value='on'] ~ .sheet-page3,
+.sheet-witchpage[value="1"] ~ .sheet-page1,
+.sheet-witchpage[value="2"] ~ .sheet-page2,
+{
 	display: inline;
 }
 
@@ -21,4 +22,47 @@
 button.sheet-squawk:before {
 	font-family: "Pictos" !important;
 	content: "w" !important;
+}
+
+.sheet-pfcontainer {
+    display: inline;
+    position: relative;
+    padding-left: 41px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.sheet-pfcontainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.sheet-pfradio {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 50px;
+	background-color: #eee;
+	border-radius: 25%;
+	border: 1px solid #F50;
+	
+}
+.sheet-pfcontainer:hover input ~ .sheet-pfradio {
+    background-color: #ccc;
+}
+.sheet-pfcontainer input:checked ~ .sheet-pfradio:after {
+	display: block;
+}
+.sheet-witchpage[value="1"] ~ .sheet-page .sheet-pfcontainer input[value="1"] ~ .sheet-pfradio,
+.sheet-witchpage[value="2"] ~ .sheet-page .sheet-pfcontainer input[value="2"] ~ .sheet-pfradio {
+	background-color: #FF0;
+}
+.sheet-pageswitch {
+	float: right;
+	right: 20px;
 }

@@ -346,11 +346,11 @@ h2 {
 
 /*Backgrounds!*/
 .sheet-rolltemplate-aw table {
-	background-image: url(https://raw.githubusercontent.com/EtoileLion/Project-Hecate/images/style1/aesparkle-normal.gif)
+	background-image: url(https://raw.githubusercontent.com/EtoileLion/Project-Hecate/master/images/style1/aesparkle-normal.gif)
 }
 .sheet-rolltemplate-aw table.success {
-	background-image: url(https://raw.githubusercontent.com/EtoileLion/Project-Hecate/images/style1/aesparkle-succ.gif)
+	background-image: url(https://raw.githubusercontent.com/EtoileLion/Project-Hecate/master/images/style1/aesparkle-succ.gif)
 }
 .sheet-rolltemplate-aw table.fail {
-	background-image: url(https://raw.githubusercontent.com/EtoileLion/Project-Hecate/images/style1/aesparkle-fail.gif)
+	background-image: url(https://raw.githubusercontent.com/EtoileLion/Project-Hecate/master/images/style1/aesparkle-fail.gif)
 }

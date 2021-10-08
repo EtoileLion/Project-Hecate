@@ -1,54 +1,55 @@
-@font-face {
-  font-family: 'Fontdiner Swanky';
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://github.com/EtoileLion/r20fonts/blob/master/DK_Toverheks.otf?raw=true) format('opentype');  
-}
+@import url('https://fonts.googleapis.com/css?family=Almendra:ital|Henny+Penny&display=swap');
 
-.sheet-page3,
-.sheet-witch,
-.sheet-school,
-.sheet-page1,
-.sheet-page2 {
+.page3,
+.witch,
+.school,
+.page1,
+.page2 {
 	display: none;
 }
 
-.sheet-isconfig[value="0"] ~ .sheet-sheettype[value="school"] ~ .sheet-school,
-.sheet-isconfig[value="0"] ~ .sheet-sheettype[value="witch"] ~ .sheet-witch,
-.sheet-isconfig[value='on'] ~ .sheet-page3,
-.sheet-witchpage[value="1"] ~ .sheet-page1,
-.sheet-witchpage[value="2"] ~ .sheet-page2,
+.isconfig[value="0"] ~ .sheettype[value="school"] ~ .school,
+.isconfig[value="0"] ~ .sheettype[value="witch"] ~ .witch,
+.isconfig[value='on'] ~ .page3,
+.witchpage[value="1"] ~ .page1,
+.witchpage[value="2"] ~ .page2
 {
 	display: inline;
 }
 
-.sheet-col-left {
+.col-left {
 	width: 30%;
 }
+.flexcontainer {
+	display: flex !important;
+}
+.flex {
+	flex: 1;
+}
 
-button.sheet-squawk:before {
+button.squawk:before {
 	font-family: "Pictos" !important;
 	content: "w" !important;
 }
 
-.sheet-pfcontainer {
-    display: inline;
+.pfcontainer {
+    display: inline !important;
     position: relative;
     padding-left: 22px;
-    margin-bottom: 12px;
+    margin-bottom: 12px !important;
     cursor: pointer;
-    font-size: 22px;
+    font-size: 22px !important;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
 }
-.sheet-pfcontainer input {
+.pfcontainer input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
 }
-.sheet-pfradio {
+.pfradio {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -58,30 +59,30 @@ button.sheet-squawk:before {
 	border-radius: 25%;
 	font-family: Pictos;	
 }
-.sheet-pfcontainer:hover input ~ .sheet-pfradio {
+.pfcontainer:hover input ~ .pfradio {
     background-color: #ccc;
 }
-.sheet-pfcontainer input:checked ~ .sheet-pfradio:after {
+.pfcontainer input:checked ~ .pfradio:after {
 	display: block;
 }
-.sheet-isconfig[value="on"] ~ div .sheet-header .sheet-pfcontainer input[type="checkbox"] ~ .sheet-pfradio,
-.sheet-witchpage[value="1"] ~ .sheet-header .sheet-pfcontainer input[value="1"] ~ .sheet-pfradio,
-.sheet-witchpage[value="2"] ~ .sheet-header .sheet-pfcontainer input[value="2"] ~ .sheet-pfradio {
+.isconfig[value="on"] ~ div .header .pfcontainer input[type="checkbox"] ~ .pfradio,
+.witchpage[value="1"] ~ div .header .pfcontainer input[value="1"] ~ .pfradio,
+.witchpage[value="2"] ~ div .header .pfcontainer input[value="2"] ~ .pfradio {
 	background-color: #b24dff;
 }
-.sheet-pageswitch {
+.pageswitch {
 	float: right;
 	right: 20px;
 }
 
 /* Header */
-.sheet-header {
+.header {
 	height: 50px;
 	background: url("https://i.ibb.co/9hD9KBj/header.png");
 	position: relative;
 }
 
-.sheet-pagetogglediv {
+.pagetogglediv {
 	float: right;
     right: 55px;
     position: absolute;
@@ -89,7 +90,7 @@ button.sheet-squawk:before {
 	top: 10px;
 }
 
-.sheet-header input[type='text'] {
+.header input[type='text'] {
 	background: transparent;
 	border: none;
 	font-size: xx-large;
@@ -99,115 +100,115 @@ button.sheet-squawk:before {
 	float:left;
 	z-index: 4;
 	width: 100%;
-	font-family: 'Fontdiner Swanky', cursive, sans-serif;
+	font-family: 'Henny Penny', cursive, sans-serif;
 }
 
 /* Page Elements */
 h2 {
 	text-align: center;
-	font-family: 'Fontdiner Swanky', cursive, sans-serif;	
+	font-family: 'Henny Penny', cursive, sans-serif;	
 }
-.sheet-flexrow {
+.flexrow {
 	display: flex;
 }
-.sheet-flexfield {
+.flexfield {
 	flex: 1;
 }
 
 /* Witch Specific Elements */
 .sheet-col,
-.sheet-page1 > p {
+.page1 > p {
 	text-align: center;
 }
 
-.sheet-page1 > p span {
+.page1 > p span {
 	font-size: x-small;
 }
 
-.sheet-page1 > p input {
+.page1 > p input {
 	border: none;
 	font-size: x-small;
 }
-.sheet-witch span {
+.witch span {
 	font-weight: bold;
 }
 
-.sheet-page2 .repitem {
+.page2 .repitem {
 	border: 1px solid #D2B48C;
 }
 
-.sheet-page2 label {
+.page2 label {
 	display: inline;
 }
 
-.sheet-page2 textarea {
+.page2 textarea {
 	width: 95%
 }
 
-.sheet-castsrow label {
+.castsrow label {
 	padding-right: 0px;
 }
 
-.sheet-descrow div {
+.descrow div {
 	width: calc(100% - 25px);
 	display: inline;
 }
 
-.sheet-descrow div:first-child {
+.descrow div:first-child {
 	width: 25px;
 	display: inline;	
 }
 
-.sheet-buttonrow div {
+.buttonrow div {
 	width: calc(50% - 12.5px);
 	display: inline;	
 }
-.sheet-buttonrow div:first-child {
+.buttonrow div:first-child {
 	width: 25px;
 }
 
-.sheet-hidespellcb[value="on"] ~ .sheet-hidespell,
-.sheet-hidespell,
-.sheet-descrow,
-.sheet-castsrow {
+.hidespellcb[value="on"] ~ .hidespell,
+.hidespell,
+.descrow,
+.castsrow {
 	display: none !important;
 }
 
-.sheet-hidespellcb[value="0"] ~ .sheet-hidespell,
-.sheet-hidespellcb[value="on"] ~ .sheet-descrow,
-.sheet-hidespellcb[value="on"] ~ .sheet-castsrow{
+.hidespellcb[value="0"] ~ .hidespell,
+.hidespellcb[value="on"] ~ .descrow,
+.hidespellcb[value="on"] ~ .castsrow{
 	display: inline !important;
 }
 
 /* School specific things */
-.sheet-faculty .repitem:not(:last-child) {
+.faculty .repitem:not(:last-child) {
 	border-bottom: 1px solid #CCC;
 	padding-bottom: 5px;
 }
 
-.sheet-faculty .repitem:not(:first-child) {
+.faculty .repitem:not(:first-child) {
 	padding-top: 5px;
 }
 
-.sheet-faculty .repitem > div,
-.sheet-faculty .repitem > p {
+.faculty .repitem > div,
+.faculty .repitem > p {
 	display: none;
 }
 
-.sheet-faculty .repitem div {
+.faculty .repitem div {
 	width:100%;
 	text-align: center;
 }
 
-.sheet-modifyprof[value="on"] ~ p,
-.sheet-modifyprof[value="0"] ~ div {
+.modifyprof[value="on"] ~ p,
+.modifyprof[value="0"] ~ div {
 	display: inline-block;
 }
 
-.sheet-faculty .repitem .sheet-col span:first-child {
+.faculty .repitem .col span:first-child {
 	font-weight: bold;
 }
-.sheet-faculty .repitem .sheet-col span:not(:first-child) {
+.faculty .repitem .col span:not(:first-child) {
 	text-transform:capitalize;
 }
 
@@ -226,7 +227,7 @@ h2 {
 }
 
 .sheet-rolltemplate-squawk th span {
-	font-family: 'Fontdiner Swanky', cursive, sans-serif;
+	font-family: 'Henny Penny', cursive, sans-serif;
 	font-style: italic;
 }
 
@@ -256,7 +257,7 @@ h2 {
 	padding-left: 10px;
 	padding-bottom: 10px;
 	line-height: 1.2em;
-	font-family: 'Fontdiner Swanky', cursive, sans-serif;
+	font-family: 'Henny Penny', cursive, sans-serif;
 	font-size: 1.1em;
 	vertical-align: center;
 	border-spacing: 0;
@@ -266,7 +267,7 @@ h2 {
 /* big number dice result */
 .sheet-rolltemplate-rr .sheet-result,
 .sheet-rolltemplate-aw .sheet-result {
-	font-family: 'Fontdiner Swanky', cursive, sans-serif;
+	font-family: 'Henny Penny', cursive, sans-serif;
 	font-size: 2em;
 	padding-top: 0px;
 	padding-right: 0px;
@@ -285,7 +286,7 @@ h2 {
 	padding-top: 0px;
 	padding-right: 30px;
 	padding-bottom: 5px;
-	font-family: 'Fontdiner Swanky', cursive, sans-serif;
+	font-family: 'Henny Penny', cursive, sans-serif;
 	font-size: 1.3em;
 	font-weight: bold;
 	vertical-align: middle;
@@ -293,8 +294,8 @@ h2 {
 }
 
 /* roll name adjustment */
-.sheet-rolltemplate-rr .rolledmovename,
-.sheet-rolltemplate-aw .rolledmovename {
+.sheet-rolltemplate-rr .sheet-rolledmovename,
+.rolltemplate-aw .sheet-rolledmovename {
 	font-weight: bold;
 	font-style: italic;
 	font-size: 1.2em;
@@ -302,13 +303,13 @@ h2 {
 
 /* 10+ colour */
 .sheet-rolltemplate-rr .sheet-success .inlinerollresult,
-.sheet-rolltemplate-rr .sheet-success .inlinerollresult.fullcrit,
-.sheet-rolltemplate-rr .sheet-success .inlinerollresult.fullfail,
-.sheet-rolltemplate-rr .sheet-success .inlinerollresult.importantroll,
+.sheet-rolltemplate-rr .sheet-success .inlinerollresult.sheet-fullcrit,
+.sheet-rolltemplate-rr .sheet-success .inlinerollresult.sheet-fullfail,
+.sheet-rolltemplate-rr .sheet-success .inlinerollresult.sheet-importantroll,
 .sheet-rolltemplate-aw .sheet-success .inlinerollresult,
-.sheet-rolltemplate-aw .sheet-success .inlinerollresult.fullcrit,
-.sheet-rolltemplate-aw .sheet-success .inlinerollresult.fullfail,
-.sheet-rolltemplate-aw .sheet-success .inlinerollresult.importantroll{
+.sheet-rolltemplate-aw .sheet-success .inlinerollresult.sheet-fullcrit,
+.sheet-rolltemplate-aw .sheet-success .inlinerollresult.sheet-fullfail,
+.sheet-rolltemplate-aw .sheet-success .inlinerollresult.sheet-importantroll{
 	background-color: transparent;
 	color: #22AA22;
 	border: none;
@@ -317,13 +318,13 @@ h2 {
 
 /* 7-9 colour */
 .sheet-rolltemplate-rr .inlinerollresult,
-.sheet-rolltemplate-rr .inlinerollresult.fullcrit,
-.sheet-rolltemplate-rr .inlinerollresult.fullfail,
-.sheet-rolltemplate-rr .inlinerollresult.importantroll,
+.sheet-rolltemplate-rr .inlinerollresult.sheet-fullcrit,
+.sheet-rolltemplate-rr .inlinerollresult.sheet-fullfail,
+.sheet-rolltemplate-rr .inlinerollresult.sheet-importantroll,
 .sheet-rolltemplate-aw .inlinerollresult,
-.sheet-rolltemplate-aw .inlinerollresult.fullcrit,
-.sheet-rolltemplate-aw .inlinerollresult.fullfail,
-.sheet-rolltemplate-aw .inlinerollresult.importantroll{
+.sheet-rolltemplate-aw .inlinerollresult.sheet-fullcrit,
+.sheet-rolltemplate-aw .inlinerollresult.sheet-fullfail,
+.sheet-rolltemplate-aw .inlinerollresult.sheet-importantroll{
 	background-color: transparent;
 	color: #000080;
 	border: none;
@@ -331,14 +332,25 @@ h2 {
 
 /* 6- colour */
 .sheet-rolltemplate-rr .sheet-failure .inlinerollresult,
-.sheet-rolltemplate-rr .sheet-failure .inlinerollresult.fullcrit,
-.sheet-rolltemplate-rr .sheet-failure .inlinerollresult.fullfail,
-.sheet-rolltemplate-rr .sheet-failure .inlinerollresult.importantroll,
+.sheet-rolltemplate-rr .sheet-failure .inlinerollresult.sheet-fullcrit,
+.sheet-rolltemplate-rr .sheet-failure .inlinerollresult.sheet-fullfail,
+.sheet-rolltemplate-rr .sheet-failure .inlinerollresult.sheet-importantroll,
 .sheet-rolltemplate-aw .sheet-failure .inlinerollresult,
-.sheet-rolltemplate-aw .sheet-failure .inlinerollresult.fullcrit,
-.sheet-rolltemplate-aw .sheet-failure .inlinerollresult.fullfail,
-.sheet-rolltemplate-aw .sheet-failure .inlinerollresult.importantroll{
+.sheet-rolltemplate-aw .sheet-failure .inlinerollresult.sheet-fullcrit,
+.sheet-rolltemplate-aw .sheet-failure .inlinerollresult.sheet-fullfail,
+.sheet-rolltemplate-aw .sheet-failure .inlinerollresult.sheet-importantroll{
 	background-color: transparent;
 	color: #B31515;
 	border: none;
+}
+
+/*Backgrounds!*/
+.sheet-rolltemplate-aw table {
+	background-image: url(https://raw.githubusercontent.com/EtoileLion/Project-Hecate/images/style1/aesparkle-normal.gif)
+}
+.sheet-rolltemplate-aw table.success {
+	background-image: url(https://raw.githubusercontent.com/EtoileLion/Project-Hecate/images/style1/aesparkle-succ.gif)
+}
+.sheet-rolltemplate-aw table.fail {
+	background-image: url(https://raw.githubusercontent.com/EtoileLion/Project-Hecate/images/style1/aesparkle-fail.gif)
 }

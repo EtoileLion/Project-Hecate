@@ -251,8 +251,16 @@
 	</p>
 </div>
 <rolltemplate class="sheet-rolltemplate-aw">
-	<table>
-		<tr>
+	{{#rollGreater() result 12}}
+			<table class="success">
+			{{/rollGreater() result 12}}
+			{{#rollBetween() result 10 12}}
+			<table>
+			{{/rollBetween() result 10 12}}
+			{{#rollLess() result 10}}
+			<table class="failure">
+			{{/rollLess() result 10}}
+			<tr>
 			<th colspan="2">{{name}} casts<br>
 				<i>{{#roll_name}}{{roll_name}}{{/roll_name}}{{#roll_mod}}{{roll_mod}}{{/roll_mod}}</i>
 			</th>
@@ -282,12 +290,15 @@
 	</table>
 </rolltemplate>
 <rolltemplate class="sheet-rolltemplate-rr">
-	<table class="{{#rollGreater() result 12}}
-			success
+	{{#rollGreater() result 12}}
+			<table class="success">
 			{{/rollGreater() result 12}}
+			{{#rollBetween() result 10 12}}
+			<table>
+			{{/rollBetween() result 10 12}}
 			{{#rollLess() result 10}}
-			failure
-			{{/rollLess() result 10}}">
+			<table class="failure">
+			{{/rollLess() result 10}}
 		<tr>
 			<th colspan="2">{{name}} rolls<br>
 				<i>{{#roll_name}}{{roll_name}}{{/roll_name}}{{#roll_mod}}{{roll_mod}}{{/roll_mod}}</i>

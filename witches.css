@@ -301,6 +301,22 @@ h2 {
 	font-size: 1.2em;
 }
 
+
+
+/* 7-9 colour */
+.sheet-rolltemplate-rr .inlinerollresult,
+.sheet-rolltemplate-rr .inlinerollresult.fullcrit,
+.sheet-rolltemplate-rr .inlinerollresult.fullfail,
+.sheet-rolltemplate-rr .inlinerollresult.importantroll,
+.sheet-rolltemplate-aw .inlinerollresult,
+.sheet-rolltemplate-aw .inlinerollresult.fullcrit,
+.sheet-rolltemplate-aw .inlinerollresult.fullfail,
+.sheet-rolltemplate-aw .inlinerollresult.importantroll{
+	background-color: transparent;
+	color: #000080;
+	border: none;
+}
+
 /* 10+ colour */
 .sheet-rolltemplate-rr .sheet-success .inlinerollresult,
 .sheet-rolltemplate-rr .sheet-success .inlinerollresult.sheet-fullcrit,
@@ -316,29 +332,15 @@ h2 {
 	text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,-1px -1px 0 #000;	
 }
 
-/* 7-9 colour */
-.sheet-rolltemplate-rr .inlinerollresult,
-.sheet-rolltemplate-rr .inlinerollresult.sheet-fullcrit,
-.sheet-rolltemplate-rr .inlinerollresult.sheet-fullfail,
-.sheet-rolltemplate-rr .inlinerollresult.sheet-importantroll,
-.sheet-rolltemplate-aw .inlinerollresult,
-.sheet-rolltemplate-aw .inlinerollresult.sheet-fullcrit,
-.sheet-rolltemplate-aw .inlinerollresult.sheet-fullfail,
-.sheet-rolltemplate-aw .inlinerollresult.sheet-importantroll{
-	background-color: transparent;
-	color: #000080;
-	border: none;
-}
-
 /* 6- colour */
 .sheet-rolltemplate-rr .sheet-failure .inlinerollresult,
-.sheet-rolltemplate-rr .sheet-failure .inlinerollresult.sheet-fullcrit,
-.sheet-rolltemplate-rr .sheet-failure .inlinerollresult.sheet-fullfail,
-.sheet-rolltemplate-rr .sheet-failure .inlinerollresult.sheet-importantroll,
+.sheet-rolltemplate-rr .sheet-failure .inlinerollresult.fullcrit,
+.sheet-rolltemplate-rr .sheet-failure .inlinerollresult.fullfail,
+.sheet-rolltemplate-rr .sheet-failure .inlinerollresult.importantroll,
 .sheet-rolltemplate-aw .sheet-failure .inlinerollresult,
-.sheet-rolltemplate-aw .sheet-failure .inlinerollresult.sheet-fullcrit,
-.sheet-rolltemplate-aw .sheet-failure .inlinerollresult.sheet-fullfail,
-.sheet-rolltemplate-aw .sheet-failure .inlinerollresult.sheet-importantroll{
+.sheet-rolltemplate-aw .sheet-failure .inlinerollresult.fullcrit,
+.sheet-rolltemplate-aw .sheet-failure .inlinerollresult.fullfail,
+.sheet-rolltemplate-aw .sheet-failure .inlinerollresult.importantroll{
 	background-color: transparent;
 	color: #B31515;
 	border: none;
@@ -348,9 +350,19 @@ h2 {
 .sheet-rolltemplate-aw table {
 	background-image: url(https://raw.githubusercontent.com/EtoileLion/Project-Hecate/master/images/style1/aesparkle-normal.gif)
 }
-.sheet-rolltemplate-aw table.success {
+.sheet-rolltemplate-aw table.sheet-success {
 	background-image: url(https://raw.githubusercontent.com/EtoileLion/Project-Hecate/master/images/style1/aesparkle-succ.gif)
 }
-.sheet-rolltemplate-aw table.fail {
+.sheet-rolltemplate-aw table.sheet-failure {
 	background-image: url(https://raw.githubusercontent.com/EtoileLion/Project-Hecate/master/images/style1/aesparkle-fail.gif)
+}
+.sheet-rolltemplate-rr table {
+	background-image: linear-gradient(to right,#8F5ECE,#99F,#8F5ECE);
+}
+
+.sheet-rolltemplate-rr table.sheet-failure {
+	background-image: linear-gradient(to right,#CE5E5E,#BB7575,#CE5E5E);
+}
+.sheet-rolltemplate-rr table.sheet-success {
+    background-image: linear-gradient(to right,#6ACE5E,#A7FF99,#6ACE5E);
 }
